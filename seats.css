@@ -1,0 +1,134 @@
+/* general seats */
+.seats-container{
+    font-family: "Open Sans";
+    display: inline-grid;
+    counter-reset: seatNumber;
+    grid-gap: 7px;
+    grid-template-columns: repeat(5, 40px);
+}
+.seats-container .seat {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    color: black;
+}
+.seats-container .seat:before{
+    font-size: 12px;
+    font-weight: 500;
+    counter-increment: seatNumber;
+    content: counter(seatNumber);
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 10px);
+    text-align: center;
+    width: 20px;
+    z-index: 2;
+}
+.seats-container .seat svg{
+    width: 40px;
+    height: 40px;
+    fill: #eee;
+    transform: rotateX(180deg);
+}
+.seats-container .seat.disabled{
+    cursor: not-allowed;
+    opacity: .4;
+}
+.seats-container .seat.disabled svg{
+    fill: #aaa;
+}
+.seats-container .seat.selected{
+    cursor: auto;
+}
+.seats-container .seat.selected svg{
+    fill: orange;
+}
+
+/* horizontal layout */
+.seats-container.horizontal{
+    grid-template-rows: repeat(5, 40px);
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    transform: rotateX(180deg);
+}
+.seats-container.horizontal .seat{
+    transform: rotateZ(-90deg) rotateY(180deg);
+}
+.seats-container.horizontal .seat:before{
+    transform: rotateZ(90deg);
+}
+
+/* bus layout */
+.seats-container.bus:after{
+    content: '';
+    grid-column: 4/6;
+    grid-row: 6/8;
+}
+.seats-container.bus:before{
+    content: '';
+    grid-column: 3/4;
+    grid-row: 1/13;
+}
+
+/* horizontal bus layout */
+.seats-container.bus.horizontal:after{
+    grid-row: 4/6;
+    grid-column: 6/8;
+}
+.seats-container.bus.horizontal:before{
+    grid-row: 3/4;
+    grid-column: 1/13;
+}
+
+/* vip-bus layout */
+.seats-container.vip-bus .door{
+    grid-column: 4/6;
+    grid-row: 6/8;
+}
+.seats-container.vip-bus:after{
+    content: '';
+    grid-column: 4/6;
+    grid-row: 6/8;
+}
+.seats-container.vip-bus:before{
+    content: '';
+    grid-column: 2/4;
+    grid-row: 1/15;
+}
+.seats-container.vip-bus .seat:nth-of-type(2){
+    grid-column: 5;
+}
+.seats-container.vip-bus .seat:nth-of-type(13){
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.seats-container.vip-bus .seat:nth-of-type(14){
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+/* horizontal vip-bus layout */
+.seats-container.vip-bus.horizontal .door{
+        grid-row: 4/6;
+        grid-column: 6/8;
+}
+.seats-container.vip-bus.horizontal:after{
+    grid-row: 4/6;
+    grid-column: 6/8;
+}
+.seats-container.vip-bus.horizontal:before{
+    grid-row: 2/4;
+    grid-column: 1/15;
+}
+.seats-container.vip-bus.horizontal .seat:nth-of-type(2){
+    grid-row: 5;
+    grid-column: unset;
+}
+.seats-container.vip-bus.horizontal .seat:nth-of-type(13){
+    grid-row: 1/2;
+    grid-column: 6/7;
+}
+.seats-container.vip-bus.horizontal .seat:nth-of-type(14){
+    grid-row: 1/2;
+    grid-column: 7/8;
+}
