@@ -5,889 +5,1329 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="seats.css" rel="stylesheet">
+    <style>
+        .seats-container{
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 30px;
+        }
+    </style>
 </head>
 <body>
 
     <!--
     ///// Documentation /////
-    * Div with 'seats-container' is the container to chairs it should have 'bus' class or 'vip-bus' class to identify it's layout.
+    * Div with 'seats-container' class is the container to chairs it should have 'bus' class or 'vip-bus' class to identify it's layout.
+    * Div with 'horizontal' class is a horizontal layout for whole bus
+    * Div with 'h-responsive' class is a horizontal from 992px and above and below is vertical layout
     * Div with 'seat' class is a chair.
     * Div with 'selected' class refer to selected chairs by user to book now.
-    * Div with 'disabled' is a reserved chair by another user
+    * Div with 'disabled' class is a reserved chair by another user
     -->
 
-    <div class="seats-container bus">
-        <div class="seat disabled">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-    </div>
-    <hr/>
-    <hr/>
-    <div class="seats-container vip-bus">
-        <div class="seat disabled">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-    </div>
-    <hr/>
-    <hr/>
-    <div class="seats-container bus horizontal">
-        <div class="seat disabled">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-    </div>
-    <hr/>
-    <hr/>
-    <div class="seats-container vip-bus horizontal">
-        <div class="seat disabled">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat selected">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
-        </div>
-        <div class="seat">
-            <svg>
-                <use xlink:href="seat.svg#seat"></use>
-            </svg>
+    <div style="display: inline-grid; grid-gap: 200px; grid-template-columns: 1fr 1fr; justify-items: center">
+        <div class="seats-container bus">
+            <div class="seat disabled">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="seats-container vip-bus">
+            <div class="seat disabled">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="seats-container bus horizontal">
+            <div class="seat disabled">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="seats-container vip-bus horizontal">
+            <div class="seat disabled">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="seats-container bus h-responsive">
+            <div class="seat disabled">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="seats-container vip-bus h-responsive">
+            <div class="seat disabled">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat selected">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
+            <div class="seat">
+                <svg>
+                    <use xlink:href="seat.svg#seat"></use>
+                </svg>
+            </div>
         </div>
     </div>
 </body>
